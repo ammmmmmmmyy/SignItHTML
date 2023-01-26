@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Camera Test</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="offset-3 col-6">
+            <div class="text-center" style="margin-bottom:2rem; margin-top:8rem;">
+                <h3><center>Sign Language Translation</center></h3>
+            </div>
+			<center>
+            <button type="button" class="custom-file-upload" id="pictureButton" style="padding-left:2rem; padding-right:2rem;">
+                Open Camera
+                <i class="fas fa-camera"></i>
+            </button>
+			</center>
+        </div>
+    </div>
+    <div class="row" id="pictureConfirm" style="display:none;">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Preview</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img id="picturePreview" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var constraints = {
+            video: {
+                width: {
+                    min: 480,
+                    max: 2560
+                },
+                height: {
+                    min: 480,
+                    max: 2560
+                },
+                facingMode: 'environment'
+            }
+        }
+    </script>
+    <script src="SWCamera.js"></script>
+</body>
+</html>

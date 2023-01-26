@@ -1,0 +1,65 @@
+body {
+    font-family:verdana;
+	background-color: #F6F2F2;
+}
+
+button {
+    padding:1rem;
+    font-family:verdana;
+	border-radius: 14px;
+	background-color: #C9E265;
+	padding: 20px;
+	border: none;
+}
+
+/*CAMERA*/
+/*OVERLAY*/
+.camera-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    z-index: 10;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.camera-snap-container {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    position: absolute;
+    z-index: 100;
+}
+
+.camera-snap {
+    font-family: inherit;
+    border-radius: 1.5rem;
+    background-color: #0f0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.camera-cancel {
+    font-family: inherit;
+    border-radius: 1.5rem;
+    background-color: #999;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.camera-snap-container i {
+    padding: 2rem;
+}
+
+.camera-snap-container div {
+    margin: 0 0.5rem;
+}
